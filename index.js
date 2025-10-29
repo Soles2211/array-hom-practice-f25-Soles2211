@@ -6,7 +6,11 @@ const students = [
 ];
 
 // Your code here
+const findScore = (student) => {
+  return student.score > 90; 
+}
 
+console.log(students.find(findScore));
 
 // Expected output: { name: "Brian", score: 95 }
 
@@ -16,6 +20,7 @@ const fruits = ["apple", "banana", "mango", "orange"];
 
 // Your code here
 
+console.log(fruits.findIndex((fruit) => fruit === "mango"));
 
 // Expected output: 2
 
@@ -30,3 +35,4 @@ const books = [
 
 // Your code here
 // Expected output: ["The Hobbit", "1984", "Pride and Prejudice"]
+console.log(books.map((book) => book.title));
